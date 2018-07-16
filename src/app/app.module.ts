@@ -4,10 +4,18 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
+import { ComputeInterestComponent } from './compute-interest/compute-interest.component';
+import { ComputeInterest2Component } from './compute-interest2/compute-interest2.component';
+import { IfAndForDemoComponent } from './if-and-for-demo/if-and-for-demo.component';
+import { TodayDirective } from './today.directive';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ComputeInterestComponent,
+    ComputeInterest2Component,
+    IfAndForDemoComponent,
+    TodayDirective
   ],
   imports: [
     BrowserModule,

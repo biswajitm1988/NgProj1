@@ -1,0 +1,12 @@
+<p>
+  if-and-for-demo works!
+</p>
+<label>
+  <input type="checkbox" [(ngModel)]="isParaVisible">Display the Paragraph
+</label>
+
+<div>
+  <ul *ngIf="isParaVisible">
+    <li *ngFor="let inst of instructions">{{inst}}</li>
+  </ul>
+</div>

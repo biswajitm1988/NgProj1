@@ -1,0 +1,24 @@
+<h3>Simple Interest</h3>
+<p>
+  compute-interest works!
+</p>
+<div>
+  <label for="txt1">Loan Principle</label>
+  <input type="number" id="txt1" [(ngModel)]="p"  (change)="computeInterest()">
+  {{p}}
+</div>
+<div>
+  <label for="txt2">Loan Interest Rate</label>
+  <input type="number" id="txt2" [(ngModel)]="r" (change)="computeInterest()">
+  {{r}}
+</div>
+<div>
+  <label for="txt3">Loan Duration</label>
+  <input type="number" id="txt3" [(ngModel)]="t" (change)="computeInterest()">
+  {{t}}
+</div>
+<div>
+  <label for="txt4">Interest Amount</label>
+  <strong>
+    {{si}}</strong>
+</div>
