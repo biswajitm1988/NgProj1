@@ -8,6 +8,7 @@ import { ComputeInterestComponent } from './compute-interest/compute-interest.co
 import { ComputeInterest2Component } from './compute-interest2/compute-interest2.component';
 import { IfAndForDemoComponent } from './if-and-for-demo/if-and-for-demo.component';
 import { TodayDirective } from './today.directive';
+import { GreetDirective } from './greet.directive';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { TodayDirective } from './today.directive';
     ComputeInterestComponent,
     ComputeInterest2Component,
     IfAndForDemoComponent,
-    TodayDirective
+    TodayDirective,
+    GreetDirective
   ],
   imports: [
     BrowserModule,

@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title : string='Angular JS';
+  title : string='Angular';
   description:string;
   constructor(){
     this.description="My first angular project";
