@@ -11,6 +11,9 @@ import { TodayDirective } from './today.directive';
 import { GreetDirective } from './greet.directive';
 import { BuiltinPipesDemoComponent } from './builtin-pipes-demo/builtin-pipes-demo.component';
 import { CustomPipeDemoPipe } from './custom-pipe-demo.pipe';
+import { CustomPipeDemo2Pipe } from './custom-pipe-demo2.pipe';
+import { CustomPipeDemo3Pipe } from './custom-pipe-demo3.pipe';
+import { CustomPipeDemo4Pipe } from './custom-pipe-demo4.pipe';
 
 @NgModule({
   declarations: [
@@ -21,7 +24,10 @@ import { CustomPipeDemoPipe } from './custom-pipe-demo.pipe';
     TodayDirective,
     GreetDirective,
     BuiltinPipesDemoComponent,
-    CustomPipeDemoPipe
+    CustomPipeDemoPipe,
+    CustomPipeDemo2Pipe,
+    CustomPipeDemo3Pipe,
+    CustomPipeDemo4Pipe
   ],
   imports: [
     BrowserModule,
