@@ -9,3 +9,9 @@ h1,h2{
     text-align: center;
     background-color: aqua;
 }
+
+li{
+    list-style: none;
+    display: inline;
+    padding: 10px;
+}

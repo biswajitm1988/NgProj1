@@ -3,6 +3,8 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
+import { RouterModule, Routes} from '@angular/router';
+
 import { AppComponent } from './app.component';
 import { ComputeInterestComponent } from './compute-interest/compute-interest.component';
 import { ComputeInterest2Component } from './compute-interest2/compute-interest2.component';
@@ -13,7 +15,23 @@ import { BuiltinPipesDemoComponent } from './builtin-pipes-demo/builtin-pipes-de
 import { CustomPipeDemoPipe } from './custom-pipe-demo.pipe';
 import { CustomPipeDemo2Pipe } from './custom-pipe-demo2.pipe';
 import { CustomPipeDemo3Pipe } from './custom-pipe-demo3.pipe';
-import { CustomPipeDemo4Pipe } from './custom-pipe-demo4.pipe';
+
+const routeMappings : Routes=[
+  {
+    path:'',
+    component:ComputeInterestComponent
+  },
+  {
+    path:'interest2',
+    component:ComputeInterest2Component
+  },{
+    path:'ifnFor',
+    component:IfAndForDemoComponent
+  },{
+    path:'pipes',
+    component:BuiltinPipesDemoComponent
+  }
+];
 
 @NgModule({
   declarations: [
@@ -26,13 +44,13 @@ import { CustomPipeDemo4Pipe } from './custom-pipe-demo4.pipe';
     BuiltinPipesDemoComponent,
     CustomPipeDemoPipe,
     CustomPipeDemo2Pipe,
-    CustomPipeDemo3Pipe,
-    CustomPipeDemo4Pipe
+    CustomPipeDemo3Pipe
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    RouterModule.forRoot(routeMappings)
   ],
   providers: [],
   bootstrap: [AppComponent]
