@@ -9,6 +9,8 @@ import { ComputeInterest2Component } from './compute-interest2/compute-interest2
 import { IfAndForDemoComponent } from './if-and-for-demo/if-and-for-demo.component';
 import { TodayDirective } from './today.directive';
 import { GreetDirective } from './greet.directive';
+import { BuiltinPipesDemoComponent } from './builtin-pipes-demo/builtin-pipes-demo.component';
+import { CustomPipeDemoPipe } from './custom-pipe-demo.pipe';
 
 @NgModule({
   declarations: [
@@ -17,7 +19,9 @@ import { GreetDirective } from './greet.directive';
     ComputeInterest2Component,
     IfAndForDemoComponent,
     TodayDirective,
-    GreetDirective
+    GreetDirective,
+    BuiltinPipesDemoComponent,
+    CustomPipeDemoPipe
   ],
   imports: [
     BrowserModule,
